@@ -212,7 +212,7 @@
       secondCard = null;
       lockBoard = false;
       statusText.textContent = 'Matches: 0 / 16 | Flips: 0';
-      resultText.textContent = 'Tap a card to begin.';
+      resultText.textContent = 'goodluck :-)';
     }
 
     function onCardClick(event) {
@@ -238,17 +238,17 @@
         firstCard.classList.add('matched');
         secondCard.classList.add('matched');
         matches += 1;
-        resultText.textContent = 'Nice! You found a pair.';
+        resultText.textContent = 'yay u got it.';
         resetTurn();
         if (matches === 16) {
           resultText.textContent = 'You matched all cards! Surprise is ready.';
           const giftCode = document.getElementById('gift-code');
-          giftCode.textContent = 'Your gift code is AFH8FJ59HMD29';
+          giftCode.textContent = 'Your gift code is plz pretend this is a code my cc app isnt working right now.';
           giftCode.style.display = 'block';
         }
       } else {
         lockBoard = true;
-        resultText.textContent = 'Not a match, try again.';
+        resultText.textContent = 'Nope try again ;-)';
         setTimeout(() => {
           firstCard.classList.remove('flipped');
           secondCard.classList.remove('flipped');
