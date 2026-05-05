@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Database files
+*.db
+
+# Editor files
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Render generated
+render.yaml
